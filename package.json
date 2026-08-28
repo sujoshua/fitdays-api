@@ -46,6 +46,7 @@
     "test": "tsc && node --test --experimental-test-coverage --test-coverage-include='dist/client/**' --test-coverage-include='dist/utils/**' --test-coverage-include='dist/errors/**' --test-coverage-include='dist/constants/**' --test-coverage-lines=90 --test-coverage-functions=90 --test-coverage-branches=80 dist/tests/*.test.js",
     "test:sync": "tsc && node dist/scripts/test-sync.js",
     "verify-sign": "tsc && node dist/scripts/verify-sign.js",
+    "prepare": "npm run build",
     "prepack": "npm run build:publish",
     "prepublishOnly": "npm run lint && npm test"
   },
